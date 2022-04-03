@@ -1,0 +1,149 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[10pt]{article} % use larger type; default would be 10pt
+
+\usepackage{blindtext} % set input encoding (not needed with XeLaTeX)
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+\title{Project Proposal for Petrol Pricing Prototype}
+\author{Michael Spear - 2022}
+\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+\begin{document}
+\maketitle
+
+\section{Executive Summary}
+This document aims to outline a Data Science prototype project which has the goal of proactive  petrol cost minimisation. It proposes to achieve this by building a data pipeline to current petrol station prices, then do an exploratory data analysisof historical prices, before building a few basic cost minimisation models, and then measure the performance of those models versus a baseline of randomly simulated invididuals. The output will be 2 dashboards; one which will allow both operational users to make more informed decisions and another for management to see how much potential benefit is yet to be gained.
+
+\section{Motivation}
+Since 2010, Queensland uses on average 1,700 megaliters of petrol per month (\ref{appendix:petrolUsePerMonth}) at a price of between \$1.30 to \$.1.60 per liter  (\ref{appendix:petrolPricePerMonth}), or \$2.5 billion a month. 
+In March 2022, the price of petrol passed \$2 per liter  (\ref{appendix:MarchPetrolPricePerMonth}), this inflationary pressure has impacted household living standards (\ref{appendix:CostOfLiving}) and reduced corportate profits (\ref{appendix:TruckingIndustry}). 
+If an application was made that could reduce the costs even by a few percent by understanding sources of variations, it could potentially produce quite a signficant amount of cost savings for individuals and organisations.
+
+In an effort to improve market efficienes, the Queensland Government has mandated that all petrol stations report costs within 30 minutes of a price change  (\ref{appendix:QldGovPetrolPriceChangeRule}). This increased level of pricing transparency makes this idea practical and gives a large amount of avaliable data.
+
+\section{Success Criteria and ROI}
+The main proposed outcomes of this project and their proposed benefits are:
+\begin{enumerate}
+\item \textbf{Create a report which shows controllable and uncontrollable petrol costs}. If all petrol prices are uncontrollable and therefore cannot be minimised, a company may wish to move their fleet to electric to minimise exposure or build storage facilities to capture petrol when it is cheap. If there is a high-level of controllability(i.e. certain petrol stations are always cheaper), companies/individiuals may make a series of heurestics to minimse cost or justidy more expensive machine learning algorithms and hardware.
+\item \textbf{Create a dashboard which assists drivers minimise petrol cost by showing optimal destinations.} A cost savings of at least 5\% over the baseline result is acheived.
+\item \textbf{Create a monitoring dashboard to see how much of the cost minimisation benefit has been captured and how much is still on the table.} This will assist in reaching the 5\% savings over  baseline.
+\end{enumerate}
+All software and hardware in this prototype is free. 
+
+\section{ Requirements and Constraints}
+Functional requirements are those that should be met to ship the project. They should be described in terms of the customer perspective and benefit.
+\subsection{What's in-scope and out-of-scope?}
+Some problems are too big to solve all at once. Be clear about what's out of scope.
+
+\section{Methodology}
+
+\subsection{Problem Statement}
+How will you frame the problem?
+
+\subsection{Data }
+What data will you use to train your model? What input data is needed during serving?
+
+\subsection{Datawarehouse Design}
+Creating facts and dimension tables based on star schema 
+
+\subsection{Exploratatory Data Analysis and KPI Identification}
+Finding KPIs by using exploratory data analysis
+
+\subsection{Model Building}
+From the EDA build a simple model using heruistics or simple models
+
+\subsection{Simulation and Measurement Methodology}
+Creating a simulation from the data of 10000 people a year buying fuel from random locations, which is cheaper going to the (cheapest in  surrounding suburbs vs model vs average in suburb) x average liters + average weekly budget (based on prior year simulations)
+
+\subsection{Business Intelligence}
+An image of a rough dashboard and how it can be used
+
+\section{Implementation}
+
+\subsection{High-level Design}
+Start by providing a big-picture view. 
+
+\subsection{Equipment}
+Using SQL, Python, API, Azure SQL Server, Power BI
+
+
+\subsection{Project Plan}
+Timeboxing is the main method. Want to complete in 1 week, as this is just to show that I do understand these key ideas.
+
+\appendix
+
+\section{Appendix: Source of Australian Petrol Useage Data}
+\label{appendix:petrolUsePerMonth}
+See "Australian Petroleum Statistics - Data Extract January 2022" excel file  and "Sales of petroleum products by State/Territory" tab. Sourced from https://www.energy.gov.au/publications/australian-petroleum-statistics-2022
+
+\section{Appendix: Source of Australian Petrol Useage Data}
+\label{appendix:petrolPricePerMonth}
+Sourced from https://www.accc.gov.au/media-release/australian-petrol-prices-in-2020-21-were-lowest-in-22-years
+
+\section{Appendix: March 22 Petrol Price Data}
+\label{appendix:MarchPetrolPricePerMonth}
+Sourced from https://www.msn.com/en-au/money/markets/fuel-price-relief-imminent-as-discount-phase-begins-in-parts-of-queensland/ar-AAVlBG0
+
+\section{Appendix: Cost of Living Pressures}
+\label{appendix:CostOfLiving}
+Sourced from https://www.abc.net.au/news/2022-03-15/petrol-prices-and-cost-of-living-jobs/100908296
+
+\section{Appendix: Business Costs Rising}
+\label{appendix:TruckingIndustry}
+Sourced from https://www.northqueenslandregister.com.au/story/7658701/birdsville-bucks-the-fuel-price-trend-for-now/?cs=4770
+
+\section{Appendix: Queensland Government rule on Petrol Price Changes}
+\label{appendix:QldGovPetrolPriceChangeRule}
+Sourced from https://www.fuelpricesqld.com.au/
+
+\end{document}
