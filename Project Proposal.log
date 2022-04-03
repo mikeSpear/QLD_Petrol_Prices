@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.3)  3 APR 2022 23:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.3)  4 APR 2022 01:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -373,29 +373,29 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 {C:/Users/astra/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 [2]
-Overfull \hbox (64.627pt too wide) in paragraph at lines 127--128
+Overfull \hbox (64.627pt too wide) in paragraph at lines 137--138
 \OT1/cmr/m/n/10 petroleum prod-ucts by State/Territory" tab. Sourced from https
 ://www.energy.gov.au/publications/australian-
  []
 
 
-Overfull \hbox (11.33049pt too wide) in paragraph at lines 135--136
+Overfull \hbox (11.33049pt too wide) in paragraph at lines 145--146
 \OT1/cmr/m/n/10 Sourced from https://www.msn.com/en-au/money/markets/fuel-price
 -relief-imminent-as-discount-
  []
 
 
-Overfull \hbox (32.96951pt too wide) in paragraph at lines 139--140
+Overfull \hbox (32.96951pt too wide) in paragraph at lines 149--150
 \OT1/cmr/m/n/10 Sourced from https://www.abc.net.au/news/2022-03-15/petrol-pric
 es-and-cost-of-living-jobs/100908296 
  []
 
 [3] (Project Proposal.aux) ) 
 Here is how much of TeX's memory you used:
- 5044 strings out of 478582
- 90525 string characters out of 2844345
- 388443 words of memory out of 3000000
- 23178 multiletter control sequences out of 15000+600000
+ 5045 strings out of 478582
+ 90539 string characters out of 2844345
+ 387443 words of memory out of 3000000
+ 23179 multiletter control sequences out of 15000+600000
  475051 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,11n,79p,662b,203s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -406,9 +406,9 @@ ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/astra/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/astra/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/as
 tra/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb>
-Output written on "Project Proposal.pdf" (3 pages, 85877 bytes).
+Output written on "Project Proposal.pdf" (3 pages, 87365 bytes).
 PDF statistics:
- 42 PDF objects out of 1000 (max. 8388607)
+ 43 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
